@@ -1,0 +1,163 @@
+/* General Styles */
+
+@font-face {
+    font-family: 'oldlondon';
+    src: URL('OldLondon.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'ancient';
+    src: URL('assets/fonts/Ancient\ Medium.ttf') format('truetype');
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:  'ancient';
+    text-align: center;
+    background: rgb(224, 203, 163);
+    color: #3c0606;
+
+    
+}
+
+/* Main Container */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.border-img {
+    position: absolute;
+    height: 90vh;
+    mix-blend-mode: multiply;
+    opacity: 70%;
+}
+/* Title and Date */
+.title {
+    font-size: 1.5rem;
+    color: #560606;
+    letter-spacing: .2pc;
+    text-decoration: underline;
+}
+
+.date {
+    font-size: 1.5rem;
+    letter-spacing: .1pc;
+    margin-bottom: 20px;
+}
+
+/* Curved Text */
+.curved-text {
+    width: 500px;
+    height: 200px;
+}
+
+.text-curve {
+    position: relative;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blurs anything behind it */
+    border-radius: 10px;
+    fill: #700404;
+    font-size: 2rem;
+    white-space: pre;
+}
+
+/* Floating Elements */
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    position: absolute;
+    width: 50px;
+    animation: floatAnimation 2s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Optional smooth transition for randomness */
+}
+
+/* Randomly change the size and position over time for variety */
+.floating:nth-child(even) {
+    animation-duration: 4s;
+}
+
+.floating:nth-child(odd) {
+    animation-duration: 5s;
+}
+
+
+
+.message{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.apology-text {
+    font-size: x-large;
+    letter-spacing: 0.08cap;
+    width: 60vw;
+}
+
+
+.navigation {
+    margin: 30px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(171, 18, 18);
+    font-size: xx-large;
+}
+
+a.tip {
+    text-decoration: none
+}
+a.tip:hover {
+    position: relative
+}
+a.tip span {
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+a.tip:hover span {
+    border: #c0c0c0 1px dotted;
+    padding: 5px 10px 5px 5px;
+    display: block;
+    z-index: 100;
+    background: #0e0d0d no-repeat 100% 5%;
+    left: 0px;
+    margin: 10px;
+    position: absolute;
+    top: 15px;
+    text-decoration: none
+}
+
+
