@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
         img.style.top = `${yPos}%`;
         img.style.left = `${xPos}%`;
         img.style.zIndex = "-1";
+        // img.style.opacity = "80%";
+        // img.style.mixBlendMode = "plus-darker";
         img.style.animationDuration = `${Math.random() * 5 + 5}s`;
 
         imageContainer.appendChild(img);
