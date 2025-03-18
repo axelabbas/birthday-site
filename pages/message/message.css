@@ -57,3 +57,8 @@
     text-align: center;
 }
 
+.navigation {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
