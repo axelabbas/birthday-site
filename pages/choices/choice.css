@@ -2,9 +2,13 @@
     font-family: 'ancient';
     src: URL('/assets/fonts/AncientMedium.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'anthrope';
+    src: URL('/assets/fonts/Anthrope.ttf') format('truetype');
+}
 
 body {
-    font-family: 'ancient';
+    font-family: 'anthrope';
     background: rgb(224, 203, 163);
     color: #3c0606;
     text-align: center;
