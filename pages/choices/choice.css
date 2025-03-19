@@ -1,0 +1,18 @@
+
+body {
+    background-color: rgb(224, 203, 163);;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.choice {
+    height: 10vh;
+    width: 90vh;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 45%;
+    margin-bottom: 10vh;
+}

@@ -19,14 +19,15 @@
 body {
     padding: 0;
     margin: 0;
-    font-family:  'ancient';
+    font-family: 'ancient';
     text-align: center;
     background: rgb(224, 203, 163);
     color: #3c0606;
-
-    
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /* Main Container */
 
 .container {
@@ -37,7 +38,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50vh;
+    padding-bottom: 20vh;
 }
 
 .border-img {
@@ -99,8 +100,6 @@ body {
 .floating:nth-child(odd) {
     animation-duration: 5s;
 }
-
-
 
 .message{
     display: flex;
