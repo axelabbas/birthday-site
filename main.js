@@ -82,9 +82,8 @@ document.getElementById("popup").addEventListener("click", function (event) {
   }
 });
 function isMobile() {
-  const regex =
-    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-  return regex.test(navigator.userAgent);
+  const minWidth = 768; // Minimum width for desktop devices
+  return window.innerWidth < minWidth || screen.width < minWidth;
 }
 
 if (isMobile()) {
