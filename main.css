@@ -159,3 +159,44 @@ a.tip:hover span {
 }
 
 
+/* Pop-up Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: rgb(224, 203, 163);
+    color: #3c0606;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #560606;
+}
+
+.close-btn:hover {
+    color: rgb(171, 18, 18);
+}
