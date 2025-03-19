@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose an Activity</title>
     <link rel="stylesheet" href="choice.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="choice.js"></script>
 </head>
+
 <body>
-    <div class="choices">
-        <div class="choice"></div>
-        <div class="choice"></div>
-        <div class="choice"></div>
+    <!-- Pop-up Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+        </div>
     </div>
+  
+    <div class="container">
+        <div class="navigation">
+            <a class="material-icons" href="/index.html" rel="noopener noreferrer">chevron_left</a>
+        </div>
+        <h2 class="title">pick something fun!</h2>
+
+        <div class="section">
+            <h3 class="section-title">games</h3>
+            <ul>
+                <li
+                    onclick="showPopup('phogs', 'We gotta control a two-headed stretchy dog (yes, really) and solve puzzles together.')">
+                    phogs</li>
+                <li
+                    onclick="showPopup('portal 2', 'Use portals to solve mind-bending physics puzzles — and we can make it worse for each other!')">
+                    portal 2</li>
+                <li
+                    onclick="showPopup('dont starve together', 'Survive… or Starve! A survival game where we must gather food, build shelters, and fight off monsters, hunger, and total insanity.')">
+                    don’t starve together</li>
+                <li
+                    onclick="showPopup('something else', 'Come on, we all know I suck at finding good games xD. Do you wanna continue or pick something new?')">
+                    Something else?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">movies</h3>
+            <ul>
+                <li
+                    onclick="showPopup('se7en', 'Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.')">
+                    Se7en</li>
+                <li
+                    onclick="showPopup('memento', 'An insurance investigator suffers from anterograde amnesia and uses notes and tattoos to hunt for the man he thinks killed his wife.')">
+                    Memento</li>
+                <li
+                    onclick="showPopup('knives out', 'When a wealthy crime novelist is found dead, a brilliant but eccentric detective, Benoit Blanc, is called in to investigate.')">
+                    Knives Out</li>
+                <li onclick="showPopup('brutalist', 'Come on, you suggested this xD')">The Brutalist</li>
+                <li onclick="showPopup('wind rises', 'You wanted us to watch this too!')">The Wind Rises</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Other Activities</h3>
+            <ul>
+                <li onclick="showPopup('museum', 'Virtual museum tour')">virtual Museum Tour</li>
+                <li onclick="showPopup('board games', 'Let’s play some board games!')">Board Games</li>
+                <li onclick="showPopup('discussion', 'Let’s have a deep conversation.')">Having a Discussion</li>
+                <li onclick="showPopup('pinterest', 'Let’s make a Pinterest board!')">Pinterest Board</li>
+                <li onclick="showPopup('anything', 'Anything else you want?')">Anything Else?</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
